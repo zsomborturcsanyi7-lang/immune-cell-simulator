@@ -1,5 +1,8 @@
 # ADT-T Cell — Adaptive T-Cell Simulator
 
+**Status:** ⚠️ Prototype — Mesa simulation runs, AlphaFold integration pending
+
+
 **Agent-based (Mesa) simulation modeling adaptive T-cell behavior: stress monitoring, authentication, and targeted elimination. Enhanced with AlphaFold protein structure prediction.**
 
 ## 🧫 Description
