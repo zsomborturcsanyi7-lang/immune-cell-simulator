@@ -1,167 +1,171 @@
-# ADT-T Cell — Adaptív T-Sejt Szimulátor
+# ADT-T Cell — Adaptive T-Cell Simulator
 
-**Ágens-alapú (Mesa) szimuláció, amely az adaptív T-sejtek működését modellezi: stressz monitorozás, hitelesítés, és célzott elimináció. AlphaFold fehérjeszerkezet predikcióval kiegészítve.**
+**Agent-based (Mesa) simulation modeling adaptive T-cell behavior: stress monitoring, authentication, and targeted elimination. Enhanced with AlphaFold protein structure prediction.**
 
-## 🧫 Leírás
+## 🧫 Description
 
-Az ADT-T Cell projekt egy komplex biológiai szimuláció, amely:
+The ADT-T Cell project is a complex biological simulation that features:
 
-- **T-sejt viselkedés modellezése** — adaptív immunválasz szimuláció
-- **Több szimulációs mód** — alap, klinikai, evolúciós, broadcast, apokalipszis
-- **AlphaFold integráció** — fehérjeszerkezet predikció (CIF formátum)
-- **Mesa ágens-alapú modell** — sejtek, mint autonóm ágensek
-- **Vizualizáció** — matplotlib grafikonok és ábrák
+- **T-cell behavior modeling** — adaptive immune response simulation
+- **Multiple simulation modes** — basic, clinical, evolutionary, broadcast, apocalypse
+- **AlphaFold integration** — protein structure prediction (CIF format)
+- **Mesa agent-based model** — cells as autonomous agents
+- **Visualization** — matplotlib charts and figures
 
-### Szimulációs módok
+### Simulation Modes
 
-| Mód | Fájl | Leírás |
+| Mode | File | Description |
 |-----|------|--------|
-| Alap | `adt_simulation.py` | T-sejt stressz érzékelés és elimináció |
-| Klinikai | `clinical_simulation.py` | Klinikai környezet modellezése |
-| Evolúciós | `evolutionary_simulation.py` | Evolúciós adaptáció szimuláció |
-| Broadcast | `broadcast_simulation.py` | Jelátviteli broadcast modellezés |
-| Nagy felbontás | `high_res_analysis.py` | Részletes elemzés |
-| Apokalipszis | `apocalypse_simulation.py` | Extrém stressz szcenárió |
+| Basic | `adt_simulation.py` | T-cell stress sensing and elimination |
+| Clinical | `clinical_simulation.py` | Clinical environment modeling |
+| Evolutionary | `evolutionary_simulation.py` | Evolutionary adaptation simulation |
+| Broadcast | `broadcast_simulation.py` | Signal broadcast modeling |
+| High Resolution | `high_res_analysis.py` | Detailed analysis |
+| Apocalypse | `apocalypse_simulation.py` | Extreme stress scenario |
 
-## 📁 Fájlszerkezet
+## 📁 File Structure
 
 ```
 ADT-T cell/
 ├── adt-simulator/
 │   ├── scripts/
-│   │   ├── adt_simulation.py       # Alap szimuláció (173 sor)
-│   │   ├── clinical_simulation.py  # Klinikai szimuláció
-│   │   ├── evolutionary_simulation.py # Evolúciós szimuláció
-│   │   ├── broadcast_simulation.py # Broadcast szimuláció
-│   │   ├── high_res_analysis.py    # Nagy felbontású elemzés
-│   │   └── apocalypse_simulation.py # Apokalipszis szimuláció
+│   │   ├── adt_simulation.py       # Basic simulation (173 lines)
+│   │   ├── clinical_simulation.py  # Clinical simulation
+│   │   ├── evolutionary_simulation.py # Evolutionary simulation
+│   │   ├── broadcast_simulation.py # Broadcast simulation
+│   │   ├── high_res_analysis.py    # High-resolution analysis
+│   │   └── apocalypse_simulation.py # Apocalypse simulation
 │   ├── assets/
-│   │   ├── apocalypse_test.png     # Apokalipszis teszt ábra
-│   │   ├── clinical_rescue_test.png # Klinikai mentés teszt
-│   │   ├── evolutionary_test.png   # Evolúciós teszt
-│   │   ├── broadcast_test.png      # Broadcast teszt
-│   │   └── high_res_latency.png    # Nagy felbontású latency
+│   │   ├── apocalypse_test.png     # Apocalypse test figure
+│   │   ├── clinical_rescue_test.png # Clinical rescue test
+│   │   ├── evolutionary_test.png   # Evolutionary test
+│   │   ├── broadcast_test.png      # Broadcast test
+│   │   └── high_res_latency.png    # High-resolution latency
 │   ├── docs/
-│   │   ├── ADT_WHITE_PAPER.md      # Tudományos white paper
-│   │   └── ADT_PROJECT_MASTER_SUMMARY.md # Projekt összefoglaló
-│   ├── fold_2026_05_23_19_17/      # AlphaFold predikciók
-│   │   ├── fold_*_model_*.cif      # 3D fehérjeszerkezetek (CIF)
-│   │   ├── fold_*_full_data_*.json # Teljes predikciós adatok
-│   │   ├── fold_*_summary_confidences_*.json # Konfidencia értékek
-│   │   ├── templates/              # Templát szerkezetek
-│   │   └── msas/                   # Multiple Sequence Alignment
-│   ├── fold_2026_05_23_19_17 (1)/  # Második AlphaFold futtatás
+│   │   ├── ADT_WHITE_PAPER.md      # Scientific white paper
+│   │   └── ADT_PROJECT_MASTER_SUMMARY.md # Project summary
+│   ├── fold_2026_05_23_19_17/      # AlphaFold predictions
+│   │   ├── fold_*_model_*.cif      # 3D protein structures (CIF)
+│   │   ├── fold_*_full_data_*.json # Full prediction data
+│   │   ├── fold_*_summary_confidences_*.json # Confidence scores
+│   │   ├── templates/              # Template structures
+│   │   └── msas/                   # Multiple Sequence Alignments
+│   ├── fold_2026_05_23_19_17 (1)/  # Second AlphaFold run
 │   ├── README.md
 │   └── README_OLD.md
 └── README.md
 ```
 
-## 🚀 Használat
+## 🚀 Usage
 
-### Alap T-sejt szimuláció
+### Basic T-Cell Simulation
 
 ```bash
 cd adt-simulator
 python scripts/adt_simulation.py
 ```
 
-### Klinikai szimuláció
+### Clinical Simulation
 
 ```bash
 python scripts/clinical_simulation.py
 ```
 
-### Evolúciós szimuláció
+### Evolutionary Simulation
 
 ```bash
 python scripts/evolutionary_simulation.py
 ```
 
-### Broadcast jelátvitel
+### Broadcast Signaling
 
 ```bash
 python scripts/broadcast_simulation.py
 ```
 
-### Nagy felbontású elemzés
+### High-Resolution Analysis
 
 ```bash
 python scripts/high_res_analysis.py
 ```
 
-### Apokalipszis szimuláció
+### Apocalypse Simulation
 
 ```bash
 python scripts/apocalypse_simulation.py
 ```
 
-## 📦 Függőségek
+## 📦 Dependencies
 
 ```bash
 pip install mesa matplotlib numpy
 ```
 
 - **Python 3.8+**
-- **Mesa** — ágens-alapú modellezési keretrendszer
-- **matplotlib** — vizualizáció
-- **numpy** — numerikus számítások
+- **Mesa** — agent-based modeling framework
+- **matplotlib** — visualization
+- **numpy** — numerical computing
 
-## 🧬 Szimulációs modell
+## 🧬 Simulation Model
 
-### Ágens típusok
+### Agent Types
 
 ```
 HostCell
-├── infected: bool       # Fertőzött-e a sejt
-├── acidic: bool         # Savas környezet (téves riasztás)
-└── stress_signal: bool  # Stressz jelzés
+├── infected: bool       # Whether the cell is infected
+├── acidic: bool         # Acidic environment (false alarm)
+└── stress_signal: bool  # Stress signal
 
 ADTTCell
-├── authorized_cells: set  # Hitelesített célpontok
-├── move()                 # Mozgás a rácson
+├── authorized_cells: set  # Authenticated targets
+├── move()                 # Movement on the grid
 └── step()
-    ├── Mozgás
-    ├── Stressz jel érzékelés
-    ├── Hitelesítés kérése (ping)
-    └── Elimináció (csak hitelesítve)
+    ├── Movement
+    ├── Stress signal detection
+    ├── Authentication request (ping)
+    └── Elimination (authenticated only)
 ```
 
-### Működési elv
+### Operating Principle
 
-1. **Host sejtek** stressz jelet bocsátanak ki (fertőzés VAGY savas környezet)
-2. **ADT T-sejtek** érzékelik a stressz jeleket
-3. A T-sejt **hitelesítést** kér (ping mechanism)
-4. **Csak hitelesített** célpontokat eliminál
-5. A téves riasztásokat (savas környezet) figyelmen kívül hagyja
+1. **Host cells** emit stress signals (infection OR acidic environment)
+2. **ADT T-cells** detect stress signals
+3. The T-cell requests **authentication** (ping mechanism)
+4. **Only authenticated** targets are eliminated
+5. False alarms (acidic environment) are ignored
 
-### AlphaFold integráció
+### AlphaFold Integration
 
-A projekt tartalmaz **két AlphaFold predikciós futtatást**:
-- Fehérjeszerkezetek CIF formátumban
-- Konfidencia értékek (pLDDT)
-- Többszörös szekvencia illesztések (MSA)
-- Templát alapú modellezés
+The project includes **two AlphaFold prediction runs**:
+- Protein structures in CIF format
+- Confidence scores (pLDDT)
+- Multiple sequence alignments (MSA)
+- Template-based modeling
 
-## 📊 Eredmények
+## 📊 Results
 
-A szimulációk a következőket mutatják:
+Simulations yield the following:
 
-| Szimuláció | Kimenet |
+| Simulation | Output |
 |-----------|---------|
-| Alap | T-sejt eliminációs pontosság |
-| Klinikai | Terápiás rescue ráták |
-| Evolúciós | Adaptációs idő és hatékonyság |
-| Broadcast | Jelterjedési sebesség |
-| Apokalipszis | Extrém stressz túlélési ráta |
+| Basic | T-cell elimination accuracy |
+| Clinical | Therapeutic rescue rates |
+| Evolutionary | Adaptation time and efficiency |
+| Broadcast | Signal propagation speed |
+| Apocalypse | Extreme stress survival rate |
 
-## 🔬 Tudományos háttér
+## 🔬 Scientific Background
 
-Az ADT-T sejt koncepció egy **adaptív, hitelesítés-alapú** immunterápiás megközelítést modellez, ahol a T-sejtek nem vakon eliminálnak, hanem:
+The ADT-T cell concept models an **adaptive, authentication-based** immunotherapeutic approach where T-cells do not eliminate blindly but instead:
 
-1. Érzékelik a stressz jeleket
-2. Hitelesítik a célpontokat
-3. Csak validált veszélyforrásokat támadnak
+1. Sense stress signals
+2. Authenticate targets
+3. Attack only validated threats
 
-Ez a mechanizmus csökkenti az autoimmun reakciókat és növeli a terápia specificitását.
+This mechanism reduces autoimmune reactions and increases therapeutic specificity.
 
-Részletes dokumentáció: `docs/ADT_WHITE_PAPER.md`
+Detailed documentation: `docs/ADT_WHITE_PAPER.md`
+
+## Developer
+
+Zsombi & Hermes Agent (Nous Research)
