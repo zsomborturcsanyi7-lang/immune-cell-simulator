@@ -5,6 +5,14 @@
 
 **Agent-based (Mesa) simulation modeling adaptive T-cell behavior: stress monitoring, authentication, and targeted elimination. Enhanced with AlphaFold protein structure prediction.**
 
+## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
+
+**Ez a projekt NINCS KÉSZEN. Bárki folytathatja, aki akarja!**
+Ezt a projektet Zsombi & Hermes Agent (Nous Research) közösen fejlesztette, de egyik projekt sincs 100%-osan befejezve. Ha tetszik az ötlet és tovább fejlesztenéd, nyugodtan fork-old, folytasd, és csinálj belőle valami nagyszerűt!
+
+---
+
+
 ## 🧫 Description
 
 The ADT-T Cell project is a complex biological simulation that features:
