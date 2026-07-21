@@ -1,21 +1,19 @@
-# ADT-T Cell Simulator — Agent-based T-cell simulator (kisebb verzió)
+# ADT-T Cell Simulator — Agent-Based T-Cell Simulator (smaller version)
 
-**Status:** ⚠️ Prototype — Mesa szimuláció fut, megegyezik az ADT-T-cell-Proof-of-concept repóval
+**Status:** ⚠️ Prototype — Mesa simulation runs, overlaps with ADT-T-cell-Proof-of-concept
 
-Ez a repo az `ADT-T-cell-Proof-of-concept` egy kisebb/korábbi verziója. Ugyanaz a Mesa agent-based T-cell szimuláció.
+This repo is a smaller/earlier version of `ADT-T-cell-Proof-of-concept`. Same Mesa agent-based T-cell simulation.
 
-**Megjegyzés:** Ez a két repo átfedi egymást. Az `ADT-T-cell-Proof-of-concept` a teljesebb verzió.
+**Note:** These two repos overlap. `ADT-T-cell-Proof-of-concept` is the more complete version.
 
 ## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
 
-**Ez a projekt NINCS KÉSZEN. Bárki folytathatja, aki akarja!**
-Ezt a projektet Zsombi & Hermes Agent (Nous Research) közösen fejlesztette, de egyik projekt sincs 100%-osan befejezve.
+This project was developed by Zsombi & Hermes Agent (Nous Research).
 
 ---
 
-## Tartalom
+## Contents
+- `adt-simulator/` — ADT T-cell simulator files
 
-- `adt-simulator/` — ADT T-cell szimulátor fájlok
-
-## Fejlesztő
+## Developer
 Zsombi & Hermes Agent (Nous Research)
