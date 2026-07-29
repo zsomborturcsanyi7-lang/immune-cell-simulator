@@ -1,19 +1,19 @@
 # immune-cell-simulator
 
-**Status:** ⚠️ Prototype — Mesa simulation runs, overlaps with ADT-T-cell-Proof-of-concept
+Agens-alapú T-sejt viselkedési szimuláció (Mesa framework).
 
-This repo is a smaller/earlier version of `ADT-T-cell-Proof-of-concept`. Same Mesa agent-based T-cell simulation.
+## 📌 A projekt célja
+Immunsejtek és kórokozók kölcsönhatásainak szimulációja számítógépes ágens-alapú modellben.
 
-**Note:** These two repos overlap. `ADT-T-cell-Proof-of-concept` is the more complete version.
+## ⚙️ Technológiai stakk
+- Python, Mesa, Matplotlib
 
-## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
+## 🚀 Telepítés és Használat
+```bash
+git clone https://github.com/zsomborturcsanyi7-lang/immune-cell-simulator.git
+cd immune-cell-simulator
+python run_simulation.py
+```
 
-This project was developed by Zsombi & Hermes Agent (Nous Research).
-
----
-
-## Contents
-- `adt-simulator/` — ADT T-cell simulator files
-
-## Developer
-Zsombi & Hermes Agent (Nous Research)
+## 📊 Status
+⚠️ **In silico szimuláció**.
