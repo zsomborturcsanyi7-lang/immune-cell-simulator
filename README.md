@@ -1,4 +1,4 @@
-# ADT-T Cell Simulator — Agent-Based T-Cell Simulator (smaller version)
+# immune-cell-simulator
 
 **Status:** ⚠️ Prototype — Mesa simulation runs, overlaps with ADT-T-cell-Proof-of-concept
 
